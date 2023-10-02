@@ -1,0 +1,35 @@
+<%- include('partials/header.ejs') %>
+
+<h1 id="textLarge">
+    <%= title %>
+</h1>
+<div id="contactLogo">
+    <p>Contact No <i class="fas fa-phone-square"></i>:+14168805240</p>
+    <p>Email Address <i class="fas fa-envelope-open-text"></i>:aymanbintiyasin9@gmail.com</p>
+</div>
+<br>
+<fieldset> 
+   
+    <legend class="text-center">Contact Form</legend> <!-- Added legend here -->
+    <h2 class="text-center">Please leave your Message</h2>
+    <br>
+    <form name='regForm'>
+        <p><label for="fname">First name:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+            <input type="text" name="fname" tabindex="1" size="27" /></p>
+        <p><label for="lname">Last name:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+            <input type="text" name="lname" tabindex="3" size="27" /></p>
+        <p><label for="email">Email:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+            <input type="text" name="email" tabindex="5" size="27" /></p>
+        <p><label for="phone">Phone:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+            <input type="number" name="phone" tabindex="7" size="27" /></p>
+        <p><label for="message">Message:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+            <textarea id="txtArea" name="message" rows="5" cols="25"></textarea>
+            <br>
+            <input class="button" type="submit" name="submit" value="Send" tabindex="21" onClick="return formValidation();" />
+            <input class="button" type="reset" name="reset" value="Clear" tabindex="21" onClick="return confirmreset()" />
+        </p>
+    </form>
+    <br>
+</fieldset>
+
+<%- include('partials/footer.ejs') %>

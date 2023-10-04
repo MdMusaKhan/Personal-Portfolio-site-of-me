@@ -10,7 +10,7 @@ body {
 	padding: 0;
 	background-image: url("../images/bg.jpg");
 	background-size: cover;
-	color:#ecf0f1;
+	color:#333;
 	line-height: 1.6;
 	text-align: center;
   }
@@ -46,8 +46,8 @@ body {
   #aboutText,
   #contactLogo {
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 1.5rem;
-	color:#ecf0f1;
+	font-size: 1rem;
+	color:#fafafa;
 	text-align: center;
 	margin: 1rem 0;
   }
@@ -60,15 +60,14 @@ body {
   
   #textLarge {
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 2.5rem;
-	font-weight: 700;
+	font-size: 1.5rem;
+	font-weight: 500;
 	-webkit-background-clip: text;
 	background-clip: text; /* Added the standard property */
 	color:#ecf0f1;
 	text-align: center;
 	margin: 2rem 0;
   }
-  
   
   
   div {
@@ -88,6 +87,7 @@ body {
 	border: 1px solid #333;
 	padding: 1rem;
 	margin: 1rem 0;
+	background-color:#333;
 	border-radius: 1px;
 	box-shadow: 0px 0px 10px 0px #333;
 	text-align: center;
@@ -123,9 +123,10 @@ body {
 	background-color: #3498db;
   }
   
-  legend .text-center {
-	margin-top: 2rem;
+ #contact-title {
+	margin-top: 15rem;
   }
+  
 
   /* Navigation Styling */
   nav {
@@ -162,4 +163,88 @@ body {
   
   .navbar-nav {
     float: right !important;
+}
+
+/*-------CONTACT----*/
+.contact-left{
+
+    flex-basis: 30%;
+
+   }
+
+   .contact-right{
+
+       flex-basis: 60%;
+
+   }
+
+   .contact-left p{
+
+    margin-top: 15px;
+
+}
+
+ 
+
+.contact-left p {
+
+color:#fafafa(0, 0, 0);
+
+margin-right: 10px;
+
+font-size: 18px;
+
+text-align: center;
+
+}
+
+
+.btn.btn2{
+
+    display: inline-block;
+
+    background: #bdb1b5;
+
+}
+
+.contact-right form{
+
+    width: 100%;    
+
+}
+
+form input, form textarea{
+
+    width: 100%;
+
+    border: 0;
+
+    outline: none;
+
+    background: #ffffff;
+
+    padding: 15px;
+
+    margin: 15px 0;
+
+    color: #333;
+
+    font-size: 18px;
+
+    border-radius: 6px;
+
+   
+
+}
+
+form .btn2{
+
+    padding: 14px;
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+
 }
